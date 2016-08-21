@@ -5,4 +5,5 @@ package mx.lpalma.retoemprendedor;
  */
 public class Application {
     public final static String url = "http://192.168.100.206:8000/";
+    //public final static String url = "http://reto-hackaton.herokuapp.com/";
 }
