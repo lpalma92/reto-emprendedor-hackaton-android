@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "72805264286",
+    "firebase_url": "https://reto-bca62.firebaseio.com",
+    "project_id": "reto-bca62",
+    "storage_bucket": "reto-bca62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72805264286:android:9efeebf8ab695188",
+        "android_client_info": {
+          "package_name": "mx.lpalma.retoemprendedor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72805264286-v0d6h93sq8krk3008j8a61u116idc8rs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mx.lpalma.retoemprendedor",
+            "certificate_hash": "D5582B29BF2B57A43F56E74BCDD1D8D656C3A297"
+          }
+        },
+        {
+          "client_id": "72805264286-2nobqnprk17uj2dcam27au63s89p9utm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5eJHq2tC8hbzRmsfvaKDIOGwsh8UHBcA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72805264286-r9uv70l4r6708uj3u20fiq6c7c632mqb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tkd.REHackaton"
+              }
+            },
+            {
+              "client_id": "72805264286-2nobqnprk17uj2dcam27au63s89p9utm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

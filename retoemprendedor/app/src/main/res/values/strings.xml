@@ -3,4 +3,19 @@
     <string name="action_sign_in">Iniciar sesión</string>
     <string name="prompt_password">Contraseña</string>
     <string name="prompt_email">Correo</string>
+    <string name="error_invalid_email">Email incorrecto</string>
+    <string name="error_field_required">Campo requerido</string>
+    <string name="error_invalid_password">Contraseña incorrecta</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_sign_out">Cerrar sesión</string>
+    <string name="action_notificaciones">Notificaciones</string>
+    <string name="action_proyectos">Proyectos</string>
+    <string name="action_drawer_open">Open</string>
+    <string name="action_drawer_close">Close</string>
+    <string name="title_fragment_proyectos">Proyectos</string>
+    <string name="title_fragment_notificaciones">Notificaciones</string>
+    <string name="prompt_no_pendientes">No hay datos disponibles</string>
+    <string name="title_activity_proyecto">Proyecto</string>
 </resources>

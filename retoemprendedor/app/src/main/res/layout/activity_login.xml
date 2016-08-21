@@ -7,14 +7,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    tools:context="mx.lpalma.retoemprendedor.LoginActivity">
+    android:background="@drawable/background"
+    tools:context="mx.lpalma.retoemprendedor.LoginActivity"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_weight="2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
 
         <!-- Login progress -->
         <ProgressBar
@@ -26,7 +35,7 @@
             android:layout_gravity="center_vertical|center_horizontal|center"
             android:visibility="gone" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <ScrollView
         android:id="@+id/login_form"
@@ -49,6 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_email"
+                    android:text="correo@hotmail.com"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:singleLine="true" />
@@ -64,6 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_password"
+                    android:text="password"
                     android:inputType="textPassword"
                     android:maxLines="1"
                     android:singleLine="true" />
@@ -79,7 +90,8 @@
                 android:text="@string/action_sign_in"
                 android:textColor="#FFF"
                 android:background="@color/colorPrimary"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="login"/>
         </LinearLayout>
     </ScrollView>
 
