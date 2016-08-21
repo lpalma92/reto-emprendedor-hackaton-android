@@ -39,28 +39,13 @@ public class ProyectoData {
         return result;
     }
 
-    public boolean deleteOne(Context context, String id) {
-        boolean result = false;
-        try {
-            retoDBHelper = new RetoDBHelper(context);
-            SQLiteDatabase db = retoDBHelper.getWritableDatabase();
-            ContentValues values = new ContentValues();
-            db.delete("proyecto", "id = " + id, null);
-            db.close();
-            result = true;
-        } catch (Exception e) {
-            result = false;
-        }
-        return result;
-    }
-
     public boolean delete(Context context) {
         boolean result = false;
         try {
             retoDBHelper = new RetoDBHelper(context);
             SQLiteDatabase db = retoDBHelper.getWritableDatabase();
             ContentValues values = new ContentValues();
-            db.delete("proyecto", " ", null);
+            db.delete("proyecto", "", null);
             db.close();
             result = true;
         } catch (Exception e) {

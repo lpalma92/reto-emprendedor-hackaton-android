@@ -37,28 +37,13 @@ public class IntegranteData {
         return result;
     }
 
-    public boolean deleteOne(Context context, String id) {
-        boolean result = false;
-        try {
-            retoDBHelper = new RetoDBHelper(context);
-            SQLiteDatabase db = retoDBHelper.getWritableDatabase();
-            ContentValues values = new ContentValues();
-            db.delete("integrante", "id = " + id, null);
-            db.close();
-            result = true;
-        } catch (Exception e) {
-            result = false;
-        }
-        return result;
-    }
-
     public boolean delete(Context context) {
         boolean result = false;
         try {
             retoDBHelper = new RetoDBHelper(context);
             SQLiteDatabase db = retoDBHelper.getWritableDatabase();
             ContentValues values = new ContentValues();
-            db.delete("integrante", " ", null);
+            db.delete("integrante", "", null);
             db.close();
             result = true;
         } catch (Exception e) {
@@ -74,7 +59,7 @@ public class IntegranteData {
             retoDBHelper = new RetoDBHelper(context);
             SQLiteDatabase db = retoDBHelper.getWritableDatabase();
             String[] columns = {"id", "nombre", "email", "proyecto_id"};
-            cursor = db.query("integrante", columns, "proyecto_id = " + id, null, null, null, null);
+            cursor = db.query("integrante", columns, "proyecto_id = '" + id +"'", null, null, null, null);
             if (cursor != null) {
                 if (cursor.moveToFirst()) {
                     do {

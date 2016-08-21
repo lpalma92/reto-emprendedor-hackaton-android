@@ -46,19 +46,18 @@ public class JsonParser
                 boolean objectResult = object.getBoolean("response");
                 if(objectResult){
                     user = new Usuario();
-                    user.setId(Jsonresult.getInt("id")+"");
-                    user.setNombre(Jsonresult.getString("nombre"));
+                    user.setId(object.getInt("id")+"");
+                    user.setNombre(object.getString("nombre"));
                 }
             }
 
         }catch(JSONException e){
-            Log.e("log_tag", "Error parsing data 2" + e.toString());
+            Log.e("log_tag", "Error parsing data 2 " + e.getMessage());
         }
         return user;
     }
 
     public static boolean parseProyecto(String json, Context context){
-        Usuario user = null;
         ProyectoData datap = new ProyectoData();
         datap.delete(context);
         IntegranteData datati = new IntegranteData();
