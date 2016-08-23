@@ -1,2 +1,4 @@
 # reto-emprendedor-hackaton-android
-Reto emprendedor hackaton laravel
+Proyecto desarrollado en el Hackaton del Reto emprendor de Yucatán.
+
+No terminado
